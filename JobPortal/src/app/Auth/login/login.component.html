@@ -1,0 +1,22 @@
+
+<div class="row">
+    <div class="col-md-4">
+        <form [formGroup]="login">
+            <h2> Login </h2>
+            <input type="text" placeholder="Enter Name" class="inp" formControlName="name" />
+            <input type="text" placeholder="Enter Email" class="inp" formControlName="email" />
+            <input type="password" placeholder="Password" class="inp" formControlName="password" />
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" id="singleRadio" formControlName="usertype" name="type" value="Single">Single
+                    <input type="radio" id="marriedRadio" name="type" formControlName="usertype" value="Married" checked>Not-Single
+                </div>
+            </div>
+            
+            <div class="btns">
+                <button (click)="loginSubmit(login.value) " [disabled]="login.invalid">Login</button>
+                <button (click)="goToSignup()">Signup </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+body {
+    background-color: aquamarine;
+  }
+
+  .navbar-dark .nav-item .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-dark .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+    color: #fff;
+  }
+  
+  .fa-li {
+    position: relative;
+    left: 0;
+  }
+
+  .clrrr {
+    color: black;
+    font-weight: bold;
+    font-family: cursive;
+  }
+
+  span {
+    background-repeat: no-repeat;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    text-align: center;
+  }
+
+  .ttl {
+    font-weight: bold;
+    font-family: cursive;
+  }
+
+  .meet {
+
+    width: 900px;
+    height: 300px;
+    display: inline-block;
+    margin-left: 250px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    /*border: 1px gray solid;*/
+  }
+
+  
+
+  
+
+  #info {
+    /* border: 1px solid darkorange;*/
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px grey;
+  }

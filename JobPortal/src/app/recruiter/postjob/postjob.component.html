@@ -1,0 +1,27 @@
+<h3>Job Available</h3>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Job Id</th>
+            <th>Company Name</th>
+            <th>Job Role</th>
+            <th>Skills</th>
+            <th>Job Type</th>
+            <th>Experience</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let job of jobs">
+        <td>{{job.jid}}</td>
+        <td>{{job.jcname}}</td>
+        <td>{{job.jrole}}</td>
+        <td>{{job.jskill}}</td>
+        <td>{{job.jtype}}</td>
+        <td>{{job.jexp}}</td>
+        <td>
+            <!-- <button class="btn btn-info" (click)="applyJob(movie.mid)">Apply</button> |  -->
+            <!-- <button class="btn btn-info" (click)="editJob(job.jid)">Edit</button> 
+            <button class="btn btn-warning" (click)="deleteJob(job.jid)">Delete</button></td> -->
+    </tr>
+</tbody>
+</table>

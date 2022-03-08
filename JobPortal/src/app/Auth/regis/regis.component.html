@@ -1,0 +1,33 @@
+z<h1>Sign-Up</h1>
+<div class="row">
+    <div class="form-group col-md-4">
+<form [formGroup]="register">
+    <div class="row">
+       
+        Full Name<input type="text" placeholder="Enter Name" class="inp" formControlName="name" /> 
+    </div>
+    <div class="row">
+        Email address<input type="text" placeholder="Enter Email" class="inp" formControlName="email" />
+        
+    </div>
+    <div class="row">
+        Password<input type="password" placeholder="Password" class="inp" formControlName="password" />
+    </div>
+    <div class="row">
+        Phone Number<input type="text" placeholder="Phone Number" class="inp" formControlName="phone" />
+    </div>
+    <label class="radio-inline">
+        <input type="radio" id="seeker" formControlName="type"  value="Seeker"><span>Seeker</span>
+      </label>
+      <label class="radio-inline">
+        <input type="radio" id="recruiter"  formControlName="type" value="Recruiter" checked><span>Recruiter</span>
+      </label>
+    
+    <div class="btn ">
+        <button (click)="registerSubmit() " [disabled]="register.invalid">Signup</button>
+    <button (click)="goToLogin()">Login </button>
+    </div>
+</form>
+</div>
+</div>
+
